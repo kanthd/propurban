@@ -225,7 +225,7 @@ a.breadcrumb-item i.fa, .breadcrumb>.active i.fa {
 
 @media (max-width: 767px) {
 	.property-result {
-		margin: 0;
+		margin: 0 0 25px 0;
 	}
 }
 .property-title {
@@ -300,12 +300,91 @@ a.breadcrumb-item i.fa, .breadcrumb>.active i.fa {
 	border: 0;
 	border-bottom: 2px solid #ea3a3c;
 }
+.property-detail-table table {
+	margin-bottom: 0;
+}
+.property-detail-table table tbody{
+	height: 72px;
+	display: block;
+	overflow: hidden;
+	-webkit-transition: opacity .15s linear;
+	-o-transition: opacity .15s linear;
+	transition: opacity .15s linear;
+}
 .property-detail-table .table>tbody>tr>td, .property-detail-table .table>tbody>tr>th, .property-detail-table .table>tfoot>tr>td, .property-detail-table .table>tfoot>tr>th, .property-detail-table .table>thead>tr>td, .property-detail-table .table>thead>tr>th {
 	border-color: #dadada;
 	border-top: 0;
 	border-bottom: 1px solid #ddd;
 	color: #666666;
 }
-.property-detail-footer {
-	padding: 20px;
+.property-price {
+	color: #111111;
+	font-size: 18px;
+	font-weight: 600;
+	padding: 0 0 20px 25px;
+}
+.property-price p {
+	margin: 0;
+}
+.property-area {
+	color: #888888;
+	font-size: 11px;
+}
+.property-action {
+	margin-top: 10px;
+	padding-left: 0;
+	text-align: right;
+}
+.price-range {
+	color: #111111;
+}
+.zero-margin {
+	margin: 0;
+}
+.btn-action {
+	border-radius: 0;
+	background-color: #999999;
+	color: #ffffff;
+	font-size: 11px;
+	margin-right: 5px;
+	padding: 6px 10px;
+}
+.btn-request-call {
+	border-radius: 0;
+	background-color: #ea3a3c;
+	color: #ffffff;
+	padding: 6px 10px;
+	text-transform: uppercase;
+	font-size: 11px;
+}
+.btn-request-call:hover {
+	color: #ffffff;
+}
+.show-more {
+	position: relative;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 15px;
+}
+.btn-show-more {
+	position: absolute;
+	left: 46%;
+	background: #fff;
+	border-radius: 100%;
+	height: 24px;
+	width: 25px;
+	border: 1px solid #707070;
+	font-size: 12px;
+	padding-top: 3px;
+	bottom: -15px;
+}
+.btn-show-more .fa {
+	font-size: 16px;
+}
+.collapse-content {
+	height: auto !important;
+	overflow-y: auto !important;
+	overflow-x: hidden !important;
+}
+.property-filter {
+	margin-top: 20px;
 }
