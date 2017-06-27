@@ -1,0 +1,311 @@
+header {
+	background-color: #ffffff !important;
+}
+body {
+	background-color: #efeeee;
+	font-family: Lato;
+}
+@media (min-width: 1200px) {
+	.container {
+		width: 1380px;
+	}
+}
+.header-top {
+	   box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 5px 0 rgba(0,0,0,.23);
+}
+
+.top-menu {
+	width: 25px;
+  height: 21px;
+  opacity: 0.5;
+}
+
+.logo {
+	width: 185px;
+  	height: 30px;
+}
+
+.no-padding {
+	padding: 0;
+}
+.no-pad-left {
+	padding-left: 0;
+}
+.breadcrumb {
+	background-color: #efeeee;
+	margin: 0;
+	padding: 8px 0;
+}
+a.breadcrumb-item {
+	text-decoration: none;
+	color: #666666;
+}
+a.breadcrumb-item i.fa, .breadcrumb>.active i.fa {
+	color: #444444;
+}
+.breadcrumb>.active {
+	color: #cb1b1d;
+}
+.fa-margin {
+	margin:0 5px 0 5px;
+}
+.property-search-block {
+	background-color: #ffffff;
+	border: solid 1px #d7d7d7;
+}
+
+.property-search input, .property-search .input-group-addon  {
+	border-radius: 0;
+	height: 36px;
+	border:none;
+}
+
+.property-search .input-group-addon {
+	color: #FFFFFF;
+	cursor: pointer;
+	background-color: #ea3a3c;
+	border-color: #ea3a3c;
+}
+
+.property-search .input-group-addon::placeholder {
+	color: #d7d7d7;
+	font-size: 8px;
+}
+
+
+.switch input {display:none;}
+.switch {
+	position: relative;
+	display: block;
+	width: 100px;
+	height: 28px;
+	padding: 0;
+	margin: 0 auto;
+	background: linear-gradient(to bottom, #eeeeee, #FFFFFF 25px);
+	background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF 25px);
+	border-radius: 18px;
+	box-shadow: inset 0 -1px white, inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	cursor: pointer;
+	box-sizing:content-box;
+}
+.switch-input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	box-sizing:content-box;
+}
+.switch-label {
+	position: relative;
+	display: block;
+	height: inherit;
+	font-size: 12px;
+	margin-top: 4px;
+		/*text-transform: uppercase;*/
+	background: #00baa7;
+	border-radius: inherit;
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.15);
+	box-sizing:content-box;
+}
+.switch-label:before, .switch-label:after {
+	position: absolute;
+	top: 50%;
+	margin-top: -.5em;
+	line-height: 1;
+	-webkit-transition: inherit;
+	-moz-transition: inherit;
+	-o-transition: inherit;
+	transition: inherit;
+	box-sizing:content-box;
+}
+.switch-label:before {
+	content: attr(data-off);
+	right: 10px;
+	color: #FFFFFF;
+	/*text-shadow: 0 1px rgba(255, 255, 255, 0.5);*/
+}
+.switch-label:after {
+	content: attr(data-on);
+	left: 7px;
+	color: #FFFFFF;
+	/*text-shadow: 0 1px rgba(0, 0, 0, 0.2);*/
+	opacity: 0;
+}
+.switch-input:checked ~ .switch-label {
+	background: #00baa7;
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 0 3px rgba(0, 0, 0, 0.2);
+}
+.switch-input:checked ~ .switch-label:before {
+	opacity: 0;
+}
+.switch-input:checked ~ .switch-label:after {
+	opacity: 1;
+}
+.switch-handle {
+	position: absolute;
+	top: 1px;
+	left: .5px;
+	width: 26px;
+	height: 26px;
+	background-color: #FFFFFF;
+	/*background: linear-gradient(to bottom, #FFFFFF 40%, #f0f0f0);*/
+	/*background-image: -webkit-linear-gradient(top, #FFFFFF 40%, #f0f0f0);*/
+	border-radius: 100%;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+.switch-handle:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -6px 0 0 -6px;
+	width: 12px;
+	height: 12px;
+	background: linear-gradient(to bottom, #eeeeee, #FFFFFF);
+	background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF);
+	border-radius: 6px;
+	box-shadow: inset 0 1px rgba(0, 0, 0, 0.02);
+}
+.switch-input:checked ~ .switch-handle {
+	left: 73px;
+	box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Transition
+========================== */
+.switch-label, .switch-handle {
+	transition: All 0.3s ease;
+	-webkit-transition: All 0.3s ease;
+	-moz-transition: All 0.3s ease;
+	-o-transition: All 0.3s ease;
+}
+
+.city-select {
+	cursor: pointer;
+	display: block;
+	color: #666666;
+	text-align: center;
+	padding: 8px 0;
+	position: relative;
+	text-decoration: none;
+	z-index: 2050;
+	word-wrap: break-word;
+	border-left: solid 1px #d7d7d7;
+	border-right: solid 1px #d7d7d7;
+}
+
+.city-select:hover {
+	text-decoration: none;
+	background-color: #d7d7d7;
+	-webkit-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+	color: #444444;
+}
+.city-select .fa {
+	color: #444444;
+}
+.prop-list-heading {
+	color: #333333;
+}
+.prop-count {
+	color: #666666;
+	font-size: 16px;
+}
+
+@media (max-width: 991px) and (min-width: 769px) {
+
+}
+
+.property-result {
+	background: #ffffff;
+	cursor: pointer;
+	margin: 0 25px 25px 0;
+}
+
+@media (max-width: 767px) {
+	.property-result {
+		margin: 0;
+	}
+}
+.property-title {
+	padding: 20px;
+}
+.property-title h3 {
+	color: #4a4a4a;
+	font-size: 20px;
+	margin-bottom: 5px;
+	margin-top: 0;
+}
+.property-location-text {
+	color: #999999;
+}
+.property-image {
+	position: relative;
+}
+.property-image img {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	min-height: 150px;
+}
+.property-status-text {
+	text-transform: uppercase;
+	white-space: nowrap;
+	position: absolute;
+	bottom: 15px;
+	left: 20px;
+	color: #fff;
+	background: rgb(0,166,79);
+	border-radius: 5px;
+	padding: 5px 20px;
+	text-align: center;
+	font-size: 10px;
+	font-weight: 400;
+	line-height: 1.2;
+	letter-spacing: 0.5px;
+	max-width: 180px;
+	min-width: 85px;
+}
+
+.property-detail-tabs {
+	border: 0;
+	border-radius: 0;
+	margin-bottom: 0;
+}
+.panel-body {
+	padding: 0 15px;
+}
+.property-detail-tabs>.panel-heading {
+	background-color: #ffffff;
+	border: 0;
+	border-radius: 0;
+}
+.property-detail-tabs .nav-tabs {
+	border: 0;
+}
+.property-detail-tabs .nav-tabs>li>a {
+	color: #4a4a4a;
+	font-weight: 500;
+	border: 0;
+	border-radius: 0;
+	padding: 5px 15px;
+}
+.property-detail-tabs .nav>li>a:focus, .nav>li>a:hover {
+	border-bottom: 2px solid #ea3a3c;
+}
+.property-detail-tabs .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+	color: #333333;
+	font-weight: 800;
+	border: 0;
+	border-bottom: 2px solid #ea3a3c;
+}
+.property-detail-table .table>tbody>tr>td, .property-detail-table .table>tbody>tr>th, .property-detail-table .table>tfoot>tr>td, .property-detail-table .table>tfoot>tr>th, .property-detail-table .table>thead>tr>td, .property-detail-table .table>thead>tr>th {
+	border-color: #dadada;
+	border-top: 0;
+	border-bottom: 1px solid #ddd;
+	color: #666666;
+}
+.property-detail-footer {
+	padding: 20px;
+}
