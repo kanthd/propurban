@@ -1,5 +1,7 @@
 header {
 	background-color: #ffffff !important;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 5px 0 rgba(0,0,0,.23);
+	margin-bottom: 10px;
 }
 body {
 	background-color: #efeeee;
@@ -11,20 +13,19 @@ body {
 	}
 }
 .header-top {
-	   box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 5px 0 rgba(0,0,0,.23);
+	margin-top: 20px;
+	background-color: #ffffff;
+	border: 0;
+	border-radius: 0;
 }
-
-.top-menu {
-	width: 25px;
-  height: 21px;
-  opacity: 0.5;
+.brand-logo {
+	padding: 5px;
+	height: auto;
+	margin-top: 5px;
 }
-
-.logo {
+.brand-logo img {
 	width: 185px;
-  	height: 30px;
 }
-
 .no-padding {
 	padding: 0;
 }
@@ -52,8 +53,9 @@ a.breadcrumb-item i.fa, .breadcrumb>.active i.fa {
 .property-search-block {
 	background-color: #ffffff;
 	border: solid 1px #d7d7d7;
+	margin-right: 0;
+	margin-left: 0;
 }
-
 .property-search input, .property-search .input-group-addon  {
 	border-radius: 0;
 	height: 36px;
@@ -291,10 +293,10 @@ a.breadcrumb-item i.fa, .breadcrumb>.active i.fa {
 	border-radius: 0;
 	padding: 5px 15px;
 }
-.property-detail-tabs .nav>li>a:focus, .nav>li>a:hover {
+.property-detail-tabs .nav>li>a:focus, .property-detail-tabs .nav>li>a:hover {
 	border-bottom: 2px solid #ea3a3c;
 }
-.property-detail-tabs .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+.property-detail-tabs .nav-tabs>li.active>a, .property-detail-tabs .nav-tabs>li.active>a:focus, .property-detail-tabs .nav-tabs>li.active>a:hover {
 	color: #333333;
 	font-weight: 800;
 	border: 0;
@@ -387,4 +389,42 @@ a.breadcrumb-item i.fa, .breadcrumb>.active i.fa {
 }
 .property-filter {
 	margin-top: 20px;
+}
+.btn-sort-by {
+	cursor: pointer;
+	display: block;
+	color: #666666;
+	text-align: center;
+	padding: 8px 0;
+	font-size: 12px;
+	position: relative;
+	text-decoration: none;
+	z-index: 2050;
+	word-wrap: break-word;
+	background-color: #ffffff;
+	border: solid 1px #d7d7d7;
+}
+.btn-sort-by:hover {
+	text-decoration: none;
+	background-color: #d7d7d7;
+	-webkit-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+	color: #444444;
+}
+.btn-sort-by .fa-stack {
+	width: 1em !important;
+}
+.fa-stack .fa-caret-down {
+	position: absolute;
+	bottom: 2px;
+}
+.fa-stack .fa-caret-up {
+	position: absolute;
+	top: 2px;
+}
+.btn-filter {
+	background-color: #ea3a3c;
+	color: #ffffff;
+	text-transform: uppercase;
 }

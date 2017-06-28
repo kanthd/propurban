@@ -22,83 +22,103 @@
 <body>
 <header>
   <!-- Header Menu -->
-  <div class="header-top navbar navbar-default" style="background-color: #ffffff !important;">
-    <div class="container">
-      <div class="top-menu">
-      </div>
-      <div class="logo">
-      </div>
-      <div class="nav-menu">
-        <nav class="navbar navbar-default">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <a class="navbar-brand" href="#">WebSiteName</a>
-            </div>
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">Page 1</a></li>
-              <li><a href="#">Page 2</a></li>
-              <li><a href="#">Page 3</a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </div>
+  <div class="container">
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default header-top">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img class="menu" src="images/icon-menu.png" alt="Menu"></a>
+          <a class="navbar-brand brand-logo" href="#"><img src="images/logo.png" alt="Logo"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+    </nav>
   </div>
 </header>
 <div id="property-list">
   <div class="container">
-    <div class="col-md-7 col-sm-5 no-pad-left">
-      <nav class="breadcrumb">
-        <a class="breadcrumb-item" href="#"><i class="fa fa-home" style="margin-right: 5px;"></i> Home</a>
-        <a class="breadcrumb-item" href="#"><i class="fa fa-angle-down fa-margin"></i> Bangalore</a>
-        <a class="breadcrumb-item" href="#"><i class="fa fa-angle-down fa-margin"></i> Domlur</a>
-        <span class="breadcrumb-item active"><i class="fa fa-angle-right fa-margin"></i> Project Name</span>
-      </nav>
-    </div>
-    <div class="col-md-5 col-sm-7 pull-right">
-      <div class="row property-search-block">
-        <div class="col-md-3 col-sm-3 no-padding">
-          <label class="switch">
-            <input class="switch-input" type="checkbox" />
-            <span class="switch-label" data-on="Commercial" data-off="Residential"></span>
-            <span class="switch-handle"></span>
-          </label>
-        </div>
-        <div class="col-md-3 col-sm-3 no-padding">
-          <div class="dropdown">
-            <a data-toggle="dropdown" class="dropdown-toggle city-select">Bengaluru
-              <i class="fa fa-angle-down" style="margin-left: 5px;"></i></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Chennai</a></li>
-              <!-- Other items -->
-            </ul>
+    <div class="row">
+      <div class="col-md-7 col-sm-5">
+        <nav class="breadcrumb">
+          <a class="breadcrumb-item" href="#"><i class="fa fa-home" style="margin-right: 5px;"></i> Home</a>
+          <a class="breadcrumb-item" href="#"><i class="fa fa-angle-down fa-margin"></i> Bangalore</a>
+          <a class="breadcrumb-item" href="#"><i class="fa fa-angle-down fa-margin"></i> Domlur</a>
+          <span class="breadcrumb-item active"><i class="fa fa-angle-right fa-margin"></i> Project Name</span>
+        </nav>
+      </div>
+      <div class="col-md-5 col-sm-7 pull-right">
+        <div class="row property-search-block">
+          <div class="col-md-3 col-sm-3 no-padding">
+            <label class="switch">
+              <input class="switch-input" type="checkbox" />
+              <span class="switch-label" data-on="Commercial" data-off="Residential"></span>
+              <span class="switch-handle"></span>
+            </label>
           </div>
-        </div>
-        <div class="col-md-6 col-sm-6  no-padding">
+          <div class="col-md-3 col-sm-3 no-padding">
+            <div class="dropdown">
+              <a data-toggle="dropdown" class="dropdown-toggle city-select">Bengaluru
+                <i class="fa fa-angle-down" style="margin-left: 5px;"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Chennai</a></li>
+                <!-- Other items -->
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6  no-padding">
             <div class="input-group property-search">
               <input type="text" class="form-control" placeholder="Search by Locality"/>
               <div class="input-group-addon">
                 <i class="fa fa-search"></i>
               </div>
             </div>
+          </div>
         </div>
       </div>
     </div>
     <div class="clearfix"></div>
-    <div class="col-md-5 no-padding">
-      <h2 class="prop-list-heading">Property for Sale in Bengaluru <span class="prop-count">(450 projects)</span></h2>
-    </div>
-    <div class="col-md-4 pull-right property-filter">
-      <div class="row">
-        <div class="col-md-6">
-          <button type="button" class="btn">Sort by: Our favourites</button>
-        </div>
-        <div class="col-md-6">
-          <button type="button" class="btn">Refine filters</button>
+    <div class="row">
+      <div class="col-md-5">
+        <h2 class="prop-list-heading">Property for Sale in Bengaluru <span class="prop-count">(450 projects)</span></h2>
+      </div>
+      <div class="col-md-4 pull-right property-filter">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="dropdown">
+              <a data-toggle="dropdown" class="dropdown-toggle btn-sort-by">Sort By: Our Favourites
+                <span class="fa fa-stack">
+                <i class="fa fa-caret-up" ></i>
+                <i class="fa fa-caret-down" ></i>
+              </span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Affordable</a></li>
+                <li><a href="#">Luxurious</a></li>
+                <!-- Other items -->
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="btn-group">
+
+            </div>
+            <button type="button" class="btn btn-filter">Refine filters</button>
+          </div>
         </div>
       </div>
     </div>
+    <div class="clearfix"></div>
+    <br/>
     <div class="col-xs-12 col-sm-8 col-md-8">
       <div class="row">
 
